@@ -1,0 +1,20 @@
+
+
+[ 
+	{ 
+		"id": 1, 
+		"email":"abc@gmail.com",
+        "password":"123956"
+		
+	}, 
+	{ 
+		"id": 2, 
+		"email":"ahc@gmail.com",
+        "password":"126456"
+	}, 
+	{ 
+		"id": 3, 
+		"email":"kbc@gmail.com",
+        "password":"189456"
+	}
+]
