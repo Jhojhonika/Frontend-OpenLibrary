@@ -28,7 +28,7 @@ function Booklist() {
         if (!genre) return; // Ensure genre is defined before making the API call
 
         axios
-            .get(`https://openlibrary-backend-production.up.railway.app`, { params: { genre } }) // Pass genre as a query parameter
+            .get(`https://openlibrary-backend-production.up.railway.app/api/books`, { params: { genre } }) // Pass genre as a query parameter
             .then((response) => {
                 setBooks(response.data);
             })
@@ -84,7 +84,8 @@ function Booklist() {
 
     return (
         <>
-            
+             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></link>
+             <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></link>
             <link rel="stylesheet" href="index.css" />
 
 
