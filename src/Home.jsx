@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import { Outlet, useNavigate } from 'react-router-dom';
+import './index.css';
 
 import AddBookForm from './addbook';
 import Footer from "./footer";

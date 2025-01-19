@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import React, { useEffect, useState } from 'react';
 import Bookview from "./bookview"
+import './index.css';
 
 import Home from './Home'
 import Categories from "./categories"
