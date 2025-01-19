@@ -24,7 +24,7 @@ function BookDetails() {
             <div className="row">
                 <div className="col-md-6">
                     <img
-                        src={`http://localhost:8080${image}`}
+                        src={`https://openlibrary-backend-production.up.railway.app${image}`}
                         alt={book.title}
                         style={{
                             width: "60%",

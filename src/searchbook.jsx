@@ -13,8 +13,8 @@ function SearchBook() {
             // Determine whether the query is an author or a title by checking for a space (simple heuristic)
             const isAuthorSearch = query.split(" ").length > 1;
             const endpoint = isAuthorSearch
-                ? `http://localhost:8080/api/books?author=${query}`
-                : `http://localhost:8080/api/books?title=${query}`;
+                ? `https://openlibrary-backend-production.up.railway.app/api/books?author=${query}`
+                : `https://openlibrary-backend-production.up.railway.app/api/books?title=${query}`;
 
             // Fetch books based on author or title
             axios
