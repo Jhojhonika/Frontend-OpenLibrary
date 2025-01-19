@@ -1,10 +1,11 @@
+import './assets/index.css';
 function Footer() {
    
     return (
         <>
 
             
-            <link rel="stylesheet" href="index.css"></link>
+            
           
 
             <div>

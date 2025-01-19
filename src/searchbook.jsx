@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import './index.css';
+import './assets/index.css';
 
 function SearchBook() {
     const { query } = useParams(); 

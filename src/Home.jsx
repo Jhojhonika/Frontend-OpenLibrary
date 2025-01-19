@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import { Outlet, useNavigate } from 'react-router-dom';
-import './index.css';
+import './assets/index.css';
 
 import AddBookForm from './addbook';
 import Footer from "./footer";
@@ -25,7 +25,7 @@ function Home() {
 
             <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
             <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></link>
-            <link rel="stylesheet" href="index.css"></link>
+            
             <section >
                 <div className="main-navbar shadow-sm sticky-top ">
                     <div className="top-navbar">

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import './index.css';
+import './assets/index.css';
 
 function Categories() {
 
@@ -49,7 +49,7 @@ function Categories() {
     return (
         <>
             
-            <link rel="stylesheet" href="index.css"></link>
+           
 
             <div>
                 <img src='./images/addhome.avif' className='img-fluid' alt="Image description"></img>
