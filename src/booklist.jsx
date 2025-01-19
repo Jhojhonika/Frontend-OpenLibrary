@@ -28,7 +28,7 @@ function Booklist() {
         if (!genre) return; // Ensure genre is defined before making the API call
 
         axios
-            .get(`http://localhost:8081/api/books`, { params: { genre } }) // Pass genre as a query parameter
+            .get(`http://localhost:8080/api/books`, { params: { genre } }) // Pass genre as a query parameter
             .then((response) => {
                 setBooks(response.data);
             })
@@ -45,7 +45,7 @@ function Booklist() {
                     console.error("Genre is undefined");
                     return;
                 }
-                const response = await axios.get(`http://localhost:8081/api/books/images/${genre}`);
+                const response = await axios.get(`http://localhost:8080/api/books/images/${genre}`);
                 setImages(response.data); // Set the fetched images
             } catch (err) {
                 setError("Failed to fetch images.");
@@ -57,7 +57,7 @@ function Booklist() {
     // Handle delete book
     const handleDelete = (bookId) => {
         axios
-            .delete(`http://localhost:8081/api/books/${bookId}`)
+            .delete(`http://localhost:8080/api/books/${bookId}`)
             .then((response) => {
                 setBooks((prevBooks) => prevBooks.filter((book) => book.id !== bookId));
                 alert("Book deleted successfully.");
@@ -84,14 +84,7 @@ function Booklist() {
 
     return (
         <>
-            <link
-                rel="stylesheet"
-                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-            />
-            <link
-                href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-                rel="stylesheet"
-            />
+            
             <link rel="stylesheet" href="index.css" />
 
 
@@ -124,7 +117,7 @@ function Booklist() {
                                     } // Pass the book and image URL
                                 >
                                     <img
-                                        src={`http://localhost:8081${images[index]}`}
+                                        src={`http://localhost:8080${images[index]}`}
                                         alt={book.title}
                                         className="card-img-top"
                                         style={{

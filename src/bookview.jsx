@@ -24,7 +24,7 @@ function BookDetails() {
             <div className="row">
                 <div className="col-md-6">
                     <img
-                        src={`http://localhost:8081${image}`}
+                        src={`http://localhost:8080${image}`}
                         alt={book.title}
                         style={{
                             width: "60%",

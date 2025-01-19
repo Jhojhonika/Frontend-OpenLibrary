@@ -23,7 +23,7 @@ function App() {
           <Route path="/searchbook/:query" element={<SearchBook />} />
           <Route path="addbook" element={<AddBookForm />} />
          
-          <Route path="productlist" element={<Booklist />} />
+          <Route path="booklist" element={<Booklist />} />
           <Route path="/bookview/:id" element={<Bookview />} />
           
           

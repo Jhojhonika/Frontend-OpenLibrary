@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Outlet, useNavigate } from 'react-router-dom';
 
 import AddBookForm from './addbook';
+import Footer from "./footer";
 
 function Home() {
     const [searchQuery, setSearchQuery] = useState("");
@@ -48,23 +49,13 @@ function Home() {
                                     <a href='./'><div className='d-flex justify-content-center'><img className='logo' src='./images/logo.png' ></img></div></a>
                                 </div>
                                 <div className='col-md-3 d-flex justify-content-center  col-3  col-lg-4'>
-                                    <nav className="navbar navbar-expand-lg   ">
-                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
-                                            <span class="navbar-toggler-icon"></span>
+
+                                <li class="nav-item">
+                                        <button class="nav-link" onClick={() => { navigate('./addbook') }}>
+                                            <i class="fa fa-heart"></i> Add Book
                                         </button>
-                                        <div class=" collapse navbar-collapse  my-auto col-lg-4 " id="navbarSupportedConten">
-                                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    </li>
 
-
-                                                <li class="nav-item">
-                                                    <button class="nav-link" onClick={() => { navigate('./addbook') }}>
-                                                        <i class="fa fa-heart"></i> Add Book
-                                                    </button>
-                                                </li>
-
-                                            </ul>
-                                        </div>
-                                    </nav>
                                 </div>
                             </div>
                         </div>
@@ -75,6 +66,7 @@ function Home() {
 
             </section>
             <Outlet />
+            <Footer/>
 
         </>
     )

@@ -46,8 +46,7 @@ function Categories() {
 
     return (
         <>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"></link>
-            <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></link>
+            
             <link rel="stylesheet" href="index.css"></link>
 
             <div>
@@ -57,7 +56,7 @@ function Categories() {
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4 class="mb-4 text-center text-warning-emphasis">Read by genre</h4>
+                            <h4 class="mb-4 text-center text-warning-emphasis">Read by Genre</h4>
                         </div>
 
 
@@ -65,7 +64,7 @@ function Categories() {
                             return (
                                 <div class="col-6 col-md-4 col-lg-2"key={id} >
                                     <div class="category-card" >
-                                    <Link to="/productlist" state={{ genre: genres.genre_name }}>
+                                    <Link to="./booklist" state={{ genre: genres.genre_name }}>
                                             <div class="category-card-img">
                                                 <img src={genres.category_image} class="w-100" alt="Laptop" />
                                             </div>
