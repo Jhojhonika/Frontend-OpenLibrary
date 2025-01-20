@@ -9,6 +9,7 @@ import Booklist from "./booklist"
 
 import AddBookForm from "./addbook";
 import SearchBook from "./searchbook";
+import BookDetails from "./bookview";
 
 function App() {
   
@@ -25,7 +26,7 @@ function App() {
           <Route path="addbook" element={<AddBookForm />} />
          
           <Route path="booklist" element={<Booklist />} />
-          <Route path="/bookview/:id" element={<Bookview />} />
+          <Route path="/bookview/:id" element={<BookDetails />} />
           
           
           </Route>
